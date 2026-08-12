@@ -1,8 +1,8 @@
 # Tarea1LP2026
 
-================================================================================
+
 TAREA 1: INTÉRPRETE DE RELATO - ANALIZADOR LÉXICO
-================================================================================
+
 
 Nombre: Cristóbal Alonso Uteau González
 Rol: 202473629-9
@@ -37,4 +37,4 @@ con las siguientes condiciones:
 Una vez finalizada la ejecución, el programa generará automáticamente:
     - Un reporte estadístico impreso directamente por la terminal.
 
-================================================================================
+

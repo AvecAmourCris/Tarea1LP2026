@@ -4,7 +4,7 @@ import re
 minuscula = r"[a-záéíóúñ]"
 mayuscula = r"[A-ZÁÉÍÓÚÑ]"
 digito = r"[0-9]"
-caracteres_extra = r"[a-záéíóúñA-ZÁÉÍÓÚÑ\-]"
+caracteres_extra = r"[a-záéíóúñA-ZÁÉÍÓÚÑ]"
 
 # --- 2. entidades del juego ---
 jugador = rf"{mayuscula}{caracteres_extra}+"

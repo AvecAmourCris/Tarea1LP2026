@@ -1,6 +1,7 @@
-[ALINEACION] El equipo Argentina sale a la cancha con: Messi, DePaul y Fernández
-[ALINEACION] El equipo España sale a la cancha con: Ferrán, Cubarsí y Lamine
-[0'] ¡Pita el árbitro y arranca el encuentro! Mueve Messi
-[5'] Messi toca para Fernández
+[ALINEACION] El equipo España sale a la cancha con: Lamine, Morata y Simon
+[ALINEACION] El equipo Francia sale a la cancha con: Mbappe, Kante y Maignan
+[0'] ¡Pita el árbitro y arranca el encuentro! Mueve Lamine
+[10'] Lamine toca la pelota con Morata
+[CAMBIO] el jugador Simon sale y entra Raya
 [25'] Lamine patea al arco, pero se va por arriba
-[93'] ¡Goooooolazo de Ferrán para España!
+[45'] Golazo de Morata de España para Francia!

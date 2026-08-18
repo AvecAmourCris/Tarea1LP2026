@@ -11,7 +11,6 @@ letra_may = r"[A-ZÁÉÍÓÚÑ]"
 letra = rf"(?:{letra_min}|{letra_may})"
 palabra = rf"(?:{letra}(?:{letra}|{digito})*)"
 puntuacion = r"[.,!¡?¿'\”-]"
-# Usamos *? (non-greedy) para evitar bloqueos por backtracking catastrófico
 frase_variable = rf"(?:{palabra}|[ ]|{puntuacion})*?"
 
 # 2.    Entidades u objetos relevantes del archivo relator .txt
@@ -82,6 +81,8 @@ def procesar_partido():
     archivo = open("relator.txt", "r", encoding="utf-8-sig")
     
     for linea in archivo:
+        print(linea)
+
         linea = linea.strip()
         if len(linea) == 0:
             continue
@@ -121,7 +122,7 @@ def procesar_partido():
             linea_evaluandose = True
 
         # C.    Sustituciones
-        coincide_cambio = regex_cambio.search(linea)
+        coincide_cambio = True if regex_cambio.search(linea) != None else False
         if coincide_cambio:
             sale = coincide_cambio.group(1)
             entra = coincide_cambio.group(2)
@@ -142,8 +143,8 @@ def procesar_partido():
             jug_sancionado = coincide_tarjeta.group(2)
             
             if jug_sancionado in equipo_de_jugador:
-                eq = equipo_de_jugador[jug_sancionado]
-                if tipo_tarjeta == "TARJETA AMARILLA":
+                eq =equipo_de_jugador[jug_sancionado]
+                if tipo_tarjeta =="TARJETA AMARILLA":
                     estadisticas[eq]["amarillas"] += 1
                 else:
                     estadisticas[eq]["rojas"] += 1
@@ -282,7 +283,7 @@ def procesar_partido():
             linea_evaluandose = True
 
         # I.    Anotación de gol
-        coincide_gol = regex_gol.search(linea)
+        coincide_gol = True if regex_gol.search(linea) != None else False
         if coincide_gol:
             min_act = int(coincide_gol.group(1))
             anotador = coincide_gol.group(2)

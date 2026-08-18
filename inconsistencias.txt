@@ -1,0 +1,12 @@
+ERROR: Jugador Desconocido.
+Línea: "[45'] Golazo de Morata de España para Francia!"
+Motivo: 'España' no pertenece a ninguna alineación.
+
+ERROR: Jugador Desconocido.
+Línea: "[TARJETA AMARILLA] El arbitro amonesta a Morata por la infraccion"
+Motivo: 'El' no está en la cancha.
+
+ERROR: Jugador Desconocido.
+Línea: "[CAMBIO] El tecnico saca a Maignan y entra Lloris a la cancha"
+Motivo: El jugador saliente 'El' no estaba en cancha.
+
